@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    padding: 1%;
+}
+#header{
+    background: #b43104;
+    height: 110px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#bodyleft{
+    /* background-image: ; */
+    width: 25%;
+    height: 500px;
+    background: rgb(165, 82, 22);
+    margin-top: 10px;
+    margin-left: 0px;
+    border-radius: 3px;
+    float: left;
+}
+#bodyleft h3{
+    color: floralwhite;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 3px;
+    text-align: center;
+}
+#bodyleft ul{
+    list-style-type: none;
+    margin-top: 10px;
+}
+#bodyleft ul li{
+    height: 30px;
+    line-height: 30px;
+    border-radius: 300px;
+}
+#bodyleft ul li a{
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding-left: 3%;
+}
+#bodyleft ul li:hover{
+    background: rgb(112, 0, 0);
+}
+#bodyright{
+
+    padding-bottom: 1%;
+    width: 74%;
+    min-height: 500px;
+    background: chocolate;
+    /* margin-top: 10px;
+    margin-left: 10px; */
+    margin: 10px 0px 10px 10px;
+    border-radius: 3px;
+    float: left;
+}
+#bodyright h3{
+    /* margin-top: 10px; */
+    color: floralwhite;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 3px;
+    text-align: center;
+    border-bottom: 2px solid #440000;
+}
+#bodyright form table {
+    width: 95%;
+    /* background: #44000077;    Enter category name */
+    margin: auto;
+    margin-top: 10px;
+}
+#add_cat{
+    margin-top: 20px;
+    border-top: 2px solid #440000;
+}
+#bodyright form table tr th{
+    /* padding: 0% 2% 0% 2%; */
+    /* box-sizing: content-box; borderbox */
+    color: #fff;
+    /* text-align: left; */
+    background: #4400000c;
+    height: 40px;
+    font-size: 15px;
+    
+}
+#bodyright form table tr td{
+    padding-left: 1.5%;
+    /* width:50%; */
+    min-width: 135px;
+    height: 35px;
+    color: rgb(3, 3, 3);
+    text-align:left;
+    /* padding-left: 1%; */
+}
+#bodyright form table tr td input{
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid #440000;
+    padding-left: 2%;
+}
+#bodyright form table tr td select{
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid #440000;
+    padding-left: 2%;
+}
+#bodyright form table tr td a{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(15, 15, 15);
+    /* padding-right: 2% !important; */
+    padding: 0% 2% 0% 0% !important;
+}
+#bodyright form button{
+    width: 130px;
+    background: #44000042;
+    border: 2px solid #440000;
+    border-radius: 3px;
+    height: 30px;
+    margin-top: 10px;
+}
+#bodyright form button:hover{
+    background: #4400008c;
+}
+
+.scroll{
+    /* v14 */
+    overflow-x: scroll;
+    overflow-y: scroll;
+    /* text-align: center; */
+}
+.scroll form table tr th{
+    font-size: 17.5px !important;
+    /* text-align: center !important; */
+}
+/* .scroll form table tr th 1{
+
+} */
+.scroll form table tr td img{
+    height: 50px;
+    width: 50px;
+}
+.scroll form table tr td{
+    min-width: 300px;
+    height: 30px;
+}
