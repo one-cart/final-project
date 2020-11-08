@@ -1,0 +1,11 @@
+#bodyright{
+    padding-bottom: 2%;
+    width: 74%;
+    min-height: 500px;
+    background: chocolate;
+    /* margin-top: 10px;
+    margin-left: 10px; */
+    margin: 10px 0px 10px 10px;
+    border-radius: 3px;
+    float: left;
+}
