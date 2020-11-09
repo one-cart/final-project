@@ -551,9 +551,10 @@
             $m_email=$_POST['m_email'];
             $m_add=$_POST['m_add'];
             $m_phone=$_POST['m_phone'];
+            $m_pass=$_POST['m_pass_1'];
 
-            $add_mana=$con->prepare("INSERT INTO manager(m_name, m_nic, m_img, m_email, m_add, m_phone, m_date)
-                                    VALUES('$m_name', '$m_nic', '$m_img', '$m_email', '$m_add', '$m_phone', NOW())");
+            $add_mana=$con->prepare("INSERT INTO manager(m_name, m_nic, m_img, m_email, m_add, m_phone, m_date,m_pass)
+                                    VALUES('$m_name', '$m_nic', '$m_img', '$m_email', '$m_add', '$m_phone','$m_pass', NOW())");
 
             if($add_mana->execute()){
                 echo "<script>alert('Manager Details Added Successfully !')</script>";

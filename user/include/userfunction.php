@@ -12,32 +12,7 @@
         return $ip;
     }
 
-    function u_signup(){   //v44
-        include("include/db.php");
-
-        if(isset($_POST['u_signup'])){
-            $u_name=$_POST['u_name'];
-            $u_nic=$_POST['u_nic'];
-            $u_email=$_POST['u_email'];
-            $u_pass=mt_rand();                //generate random passwords for customers
-            $u_city=$_POST['u_city'];
-            $u_add=$_POST['u_add'];
-            $u_code=$_POST['u_code'];
-            $u_phone=$_POST['u_phone'];
-
-            $add_user=$con->prepare("INSERT INTO user(u_name, u_nic, u_email, u_pass, u_city, u_add, u_code, u_phone, u_reg_date)
-                                     VALUES('$u_name', '$u_nic', '$u_email', '$u_pass', '$u_city', '$u_add', '$u_code', '$u_phone', NOW())");
-
-            if($add_user->execute()){
-                echo "<script>alert('Registration Successfull...... Check Your Email To Get Your Password !!!');</script>";
-                echo "<script>window.open('indexuser.php', '_self');</script>";
-            }
-            else{
-                echo "<script>alert('Registration Failed... Please Try Again!!!');</script>";
-            }
-
-        }
-    }
+   
 
     function addcart(){
         include("include/db.php");
